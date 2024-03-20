@@ -31,24 +31,24 @@
 	      </div>
 
 	    </div>
-		
+
 
 	    <div class="main">
 
 	      <div class="row">
 			<ul>
-				<li v-for="(movie, index) in movies">
+				<li v-for="(movie, index) in movies" :key="movies.title">
 					<div class="col-md-6">
 						<div class="thumbnail">
 		
-								<img class="poster img-fluid" :src="movies[0].posters[0]" />
-								<div class="imageInfo">{{movies[0].posterIndex}}</div>
+								<img class="poster img-fluid" :src="movies[index].posters[0]" />
+								<div class="imageInfo">{{movies[index].posterIndex}}</div>
 		
-								<p class="title">{{movies[0].title}} ({{movies[0].country}})</p>
-								<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[0].iscore}} </p>
-								<p class="runtime">Runtime: {{movies[0].runtime}}</p>
-								<p class="released">Released: {{movies[0].released}} | Rated: {{movies[0].rating}}</p>
-								<p class="websites">Websites: <a> IMDB {{movies[0].imdb}} </a> | <a>Official {{movies[0].website}}</a></p>
+								<p class="title">{{movies[index].title}} ({{movies[index].country}})</p>
+								<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[index].iscore}} </p>
+								<p class="runtime">Runtime: {{movies[index].runtime}} minutes</p>
+								<p class="released">Released: {{movies[index].released}} | Rated: {{movies[index].rating}}</p>
+								<p class="websites">Websites: <a> IMDB: {{movies[index].imdb}} </a> | <a>Official: {{movies[index].website}}</a></p>
 		
 								<div class="social">
 								  <p class="likes"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i> {{movies[0].likes}}</p>
