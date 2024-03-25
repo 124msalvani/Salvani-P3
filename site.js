@@ -88,16 +88,16 @@ const vue_app = Vue.createApp({
 
             },
             
-            posterClick(){
-                  var mCurrentIndex = 0;
+            posterClick(index){
+                  let posterindex = movies[index].posters[index]
                   console.log("Pain");
-                  if (mCurrentIndex >= movies.posters.length){
-                        mCurrentIndex = 0;
+                  if (posterindex >= 3){
+                        posterindex = 0;
                   }
-                  if(mCurrentIndex <0){
-                        mCurrentIndex = movies.posters.length -1;
+                  if(posterindex <0){
+                        posterindex = movies.posters.length -1;
                   }
-                  mCurrentIndex++;
+                  posterindex++;
             }
             
       }
