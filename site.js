@@ -30,7 +30,7 @@ const vue_app = Vue.createApp({
       created () {
             fetch('movies.json').then(response => response.json()).then(json => {
                   this.movies = json
-            })
+            });
       },
       data() {
         return {
@@ -82,22 +82,27 @@ const vue_app = Vue.createApp({
                           month = "December";
                         break;
                       };
-                  theRealDate = month + " " + dateArray[2] + " " + dateArray[0]
+                  theRealDate = month + " " + dateArray[2] + " " + dateArray[0];
                   return theRealDate;
-                  
+
 
             },
             
             posterClick(index){
-                  let posterindex = movies[index].posters[index]
-                  console.log("Pain");
-                  if (posterindex >= 3){
-                        posterindex = 0;
-                  }
-                  if(posterindex <0){
-                        posterindex = movies.posters.length -1;
-                  }
-                  posterindex++;
+              console.log(index);
+              index++;
+             console.log(index);
+                
+                if (index >= 3){
+                  index = 0;
+                    return;
+                };
+                if(index <0){
+                  index = 0;
+                    return;
+                };
+                return movie.posterindex = index
+              
             }
             
       }
