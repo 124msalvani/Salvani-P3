@@ -41,7 +41,7 @@
 						<div class="thumbnail">
 		
 								<img class="poster img-fluid" :src="movies[index].posters[movie.posterindex]" @click="posterClick(index)" />
-								<div class="imageInfo">{{movies[index].posterIndex}}</div>
+								<div class="imageInfo">Poster {{movies[index].posterindex +1}} of {{movies[index].posters.length}}</div>
 		
 								<p class="title">{{movies[index].title}} ({{movies[index].country}})</p>
 								<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[index].iscore}} </p>
