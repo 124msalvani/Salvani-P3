@@ -89,7 +89,6 @@ const vue_app = Vue.createApp({
             },
             
             posterClick(index){
-             console.log(this.movies[index].posterindex);
              this.movies[index].posterindex++
       
                 if (this.movies[index].posterindex >= this.movies[index].posters.length){
@@ -104,9 +103,7 @@ const vue_app = Vue.createApp({
               
             },
             timeText(minutes){
-              console.log(minutes);
               hours = Math.trunc(minutes/60)
-              console.log(hours);
               min = minutes - hours*60
               fullTime = hours + "h" + " "+ min + "m";
               return fullTime; 
