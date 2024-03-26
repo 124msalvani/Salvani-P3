@@ -82,26 +82,30 @@ const vue_app = Vue.createApp({
                           month = "December";
                         break;
                       };
-                  theRealDate = month + " " + dateArray[2] + " " + dateArray[0];
+                  theRealDate = month + " " + dateArray[2] + ", " + dateArray[0];
                   return theRealDate;
 
 
             },
             
             posterClick(index){
-              console.log(index);
-              index++;
-             console.log(index);
+              console.log(index + " THIS SHOULDN'T BE CHANGING, it is increasing the index value for some reason")
+            console.log(this.movies[index])
+             console.log(this.movies[index].posterindex);
+             this.movies[index].posterindex++
+             
+             
+            
                 
-                if (index >= 3){
-                  index = 0;
-                    return;
+                if (this.movies[index].posterindex >= this.movies[index].posters.length){
+                  this.movies[index].posterindex = 0;
+                    return this.movies[index].posterindex;
                 };
-                if(index <0){
-                  index = 0;
-                    return;
+                if(this.movies[index].posterindex <0){
+                  this.movies[index].posterindex = 0;
+                    return this.movies[index].posterindex;
                 };
-                return movie.posterindex = index
+            
               
             }
             
