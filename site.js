@@ -89,14 +89,9 @@ const vue_app = Vue.createApp({
             },
             
             posterClick(index){
-              console.log(index + " THIS SHOULDN'T BE CHANGING, it is increasing the index value for some reason")
-            console.log(this.movies[index])
              console.log(this.movies[index].posterindex);
              this.movies[index].posterindex++
-             
-             
-            
-                
+      
                 if (this.movies[index].posterindex >= this.movies[index].posters.length){
                   this.movies[index].posterindex = 0;
                     return this.movies[index].posterindex;
@@ -107,7 +102,16 @@ const vue_app = Vue.createApp({
                 };
             
               
-            }
+            },
+            timeText(minutes){
+              console.log(minutes);
+              hours = Math.trunc(minutes/60)
+              console.log(hours);
+              min = minutes - hours*60
+              fullTime = hours + "h" + " "+ min + "m";
+              return fullTime; 
+
+        },
             
       }
 })

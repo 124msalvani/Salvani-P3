@@ -45,7 +45,7 @@
 		
 								<p class="title">{{movies[index].title}} ({{movies[index].country}})</p>
 								<p class="score"><i class="bi bi-star" aria-hidden="true"></i> {{movies[index].iscore}} </p>
-								<p class="runtime">Runtime: {{movies[index].runtime}} minutes</p>
+								<p class="runtime">Runtime: {{timeText(movies[index].runtime)}}</p>
 								<p class="released">Released: {{getMonthText(movies[index].released)}} | Rated: {{movies[index].rating}}</p>
 								<p class="websites">Websites: <a :href="movies[index].imdb"> imdb </a> | <a :href="movies[index].website">website</a></p>
 		
