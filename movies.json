@@ -68,5 +68,48 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+
+      {
+            "title": "Dune 2",
+            "iscore": 8.8,
+            "rating": "PG-13",
+            "runtime": 166,
+            "released": [2024, 3, 1],
+            "country": "USA",
+            "posters": ["img/dune2_1.jpg", "img/dune2_2.jpg", "img/dune2_3.jpg" ],
+            "imdb": "https://www.imdb.com/title/tt15239678/",
+            "website": "https://www.dunemovie.com/",
+            "likes": 945,
+            "dislikes": 254,
+            "posterindex": 0
+      },
+      {
+            "title": "Spider-Man: Across the Spider-Verse",
+            "iscore": 8.6,
+            "rating": "PG",
+            "runtime": 140,
+            "released": [2023, 6, 2],
+            "country": "USA",
+            "posters": ["img/spiderverse1.png", "img/spiderverse2.png", "img/spiderverse3.png" ],
+            "imdb": "https://www.imdb.com/title/tt9362722/?ref_=tt_mv_close",
+            "website": "https://www.sonypictures.com/movies/spidermanacrossthespiderverse",
+            "likes": 1004,
+            "dislikes": 328,
+            "posterindex": 0
+      },
+      {
+            "title": "Mv3",
+            "iscore": 8.9,
+            "rating": "PG-13",
+            "runtime": 152,
+            "released": [2008, 7, 18],
+            "country": "USA",
+            "posters": ["img/darkknight.jpg", "img/darkknight2.jpg"],
+            "imdb": "http://www.imdb.com/title/tt0468569",
+            "website": "http://www.42entertainment.com/work/whysoserious",
+            "likes": 828,
+            "dislikes": 127,
+            "posterindex": 0
       }
 ]
