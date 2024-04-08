@@ -111,5 +111,34 @@
             "likes": 768,
             "dislikes": 402,
             "posterindex": 0
+      },
+      {
+            "title": "Spirited Away",
+            "iscore": 8.6,
+            "rating": "PG",
+            "runtime": 125,
+            "released": [2001, 8, 31],
+            "country": "Japan",
+            "posters": ["img/spiritedaway_1.png", "img/spiritedaway_2.png", "img/spiritedaway_3.png"],
+            "imdb": "https://www.imdb.com/title/tt0245429/?ref_=tt_mv_close",
+            "website": "https://www.studioghibli.com.au/spiritedaway/",
+            "likes": 900,
+            "dislikes": 281,
+            "posterindex": 0
+      },
+      {
+            "title": "Gladiator",
+            "iscore": 8.5,
+            "rating": "R",
+            "runtime": 155,
+            "released": [2000, 5, 5],
+            "country": "USA",
+            "posters": ["img/gladiator_1.png", "img/gladiator_2.png", "img/gladiator_3.png"],
+            "imdb": "https://www.imdb.com/title/tt0172495/?ref_=sr_t_35",
+            "website": "https://www.studioghibli.com.au/spiritedaway/",
+            "likes": 874,
+            "dislikes": 286,
+            "posterindex": 0
       }
+      
 ]

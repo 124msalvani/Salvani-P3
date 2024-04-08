@@ -69,11 +69,14 @@ const vue_app = Vue.createApp({
                         case 7:
                           month = "July";
                           break;
-                        case 9:
+                        case 8:
                           month = "August";
                           break;
-                        case 10:
+                        case 9:
                           month = "September";
+                          break;
+                          case 10:
+                          month = "October";
                           break;
                         case 11:
                           month = "November";
